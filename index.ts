@@ -25,10 +25,10 @@ program
 
 program.name('npx @uniswap/deploy-v3').version(version).parse(process.argv)
 
-if (!/^0x[a-zA-Z0-9]{64}$/.test(program.privateKey)) {
-  console.error('Invalid private key!')
-  process.exit(1)
-}
+// if (!/^0x[a-zA-Z0-9]{64}$/.test(program.privateKey)) {
+//   console.error('Invalid private key!')
+//   process.exit(1)
+// }
 
 let url: URL
 try {
